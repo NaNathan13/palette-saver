@@ -1,4 +1,4 @@
 // vue.config.js
 module.exports = {
-    publicPath: ‘<palette-2>’
+    publicPath: "palette-2"
     }
