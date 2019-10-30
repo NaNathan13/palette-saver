@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="container">
-        <VueDropdown class="vue-dropdown"/>
+        <vue-dropdown :config="config" class="vue-dropdown">THIS IS THE TITLE</vue-dropdown>
+
         <input class="input" type="text">
     </div>
       
@@ -14,7 +15,20 @@ export default {
   name: 'FormatDropDown',
   components: {
       VueDropdown
-  }
+  },
+config: {
+            options: [
+                {
+                    value: "option 11"
+                },
+                {
+                    value: "option 22"
+                },
+                {
+                    value: "option 33"
+                },
+            ],
+        }
 
 }
 </script>
@@ -38,6 +52,6 @@ export default {
      left: 50%;
      color: red;
      margin-left: -100px;
-     top: 50px;
+     top: 75px;
  }
 </style>
