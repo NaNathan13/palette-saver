@@ -1,18 +1,19 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FormatDropDown/>
+    <Palette/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Palette from '@/components/Palette.vue'
+import FormatDropDown from '@/components/FormatDropDown.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Palette, FormatDropDown
   }
 }
 </script>
